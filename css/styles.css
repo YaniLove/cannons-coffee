@@ -179,6 +179,10 @@ footer p {
     width: auto;
   }
 
+  header{
+    flex-direction: column wrap;
+  }
+
   .hero-section {
     flex-wrap: nowrap;
     padding: 0;
@@ -194,7 +198,7 @@ footer p {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2 {
     margin-top: 0;
