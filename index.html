@@ -3,15 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cannons Coffee</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <p>Coming Soon!</p>
-    </main>
+    <div class="container">
+      <header id="home">
+        <div class="header-logo">
+          <img
+            src="images/logo-nav.png"
+            alt="Cannons Coffee Logo, Beans of Joy"
+          />
+          <h1>Cannons Coffee</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="latte.html">coffee</a></li>
+            <li>
+              <a href="https://daysixcoffee.com/" target="_blank">about</a>
+            </li>
+            <li><a href="mailto:yanilove8914@gmail.com">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- coffe-section needs flex -->
+        <div class="hero-section">
+          <img
+            class="hero-img"
+            src="/images/coffee-computer.jpg"
+            alt="Laptop with a cup of coffee and a glass of water"
+          />
+          <div class="hero-content">
+            <h2>coffee and code</h2>
+            <p>
+              Join us at Cannons Coffee for a pick-me-up and plenty of code
+              assistance and support at out coding cafe
+            </p>
 
-    <footer></footer>
+            <p>
+              <a
+                href="https://daysixcoffee.com/order/day-6-coffee-co-houston"
+                class="button-hero"
+                target="_blank"
+              >
+                reserve a table
+              </a>
+            </p>
+            <!-- green button -->
+          </div>
+        </div>
+        <div class="cards-section">
+          <h2>Our Coffee</h2>
+          <div class="cards-wrapper">
+            <!-- flex cards-wrapper-->
+            <!-- div.cards*4 (tab) -->
+
+            <div class="card">
+              <h3>Latte</h3>
+              <img src="images/latte.jpg" alt="Latte in a cup" />
+              <p>
+                Hot or cold, with dairy or oat milk, your favorite is available
+                anytime!
+              </p>
+              <p>
+                <a
+                  href="https://daysixcoffee.com/order/day-6-coffee-co-houston/item-latte_885302a1-1ae9-4e02-8c51-b8dc74e6c3c5"
+                  target="_blank"
+                  class="button"
+                >
+                  Order Latte</a
+                >
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Coffee</h3>
+              <img src="images/coffee.jpg" alt="Coffee in a cup" />
+              <p>
+                Simple, elegant, and always in style, our black coffee comes
+                from Colombia in small, hand-roasted batches.
+              </p>
+              <p>
+                <a
+                  href="https://daysixcoffee.com/order/day-6-coffee-co-houston/item-regular-coffee-downtowndrip_6314b8d3-4e7f-4716-99b7-7e8d94247922"
+                  target="_blank"
+                  class="button"
+                  >Order Coffee</a
+                >
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Hot Chocolate</h3>
+              <img
+                src="images/hotchoc.jpg"
+                alt="Hot Chocolate in a cup with whipped cream"
+              />
+              <p>
+                Not a coffee person? We have you covered. Hot, sweet, ready
+                anytime.
+              </p>
+              <p>
+                <a
+                  href="https://daysixcoffee.com/order/day-6-coffee-co-houston/item-hot-chocolate_0caed675-12ae-4c0c-98f9-f0ce012c8fa4"
+                  target="_blank"
+                  class="button"
+                  >Order Hot Chocolate</a
+                >
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Iced Coffee</h3>
+              <img
+                src="images/iced.jpg"
+                alt="Iced coffee in a mug with a straw"
+              />
+              <p>
+                Perfect for hot summer days, our iced coffee is made with just
+                enough sweetness to cool down your day.
+              </p>
+              <p>
+                <a
+                  href="https://daysixcoffee.com/order/day-6-coffee-co-houston/item-regular-coffee-downtowndrip_6314b8d3-4e7f-4716-99b7-7e8d94247922"
+                  target="_blank" class="button"
+                  >Order Iced Coffee</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <img src="images/logo-footer.png" alt="Cannons Coffee, Beans of Joy! Est. 2014">
+        <p>© 2026 Cannons Coffee. All Rights Reserved. </p>
+      </footer>
+    </div>
   </body>
 </html>
