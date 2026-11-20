@@ -21,7 +21,7 @@ html {
 }
 
 h1 {
-  /* font-size: 3rem; */
+  font-size: 3rem;
   line-height: 1.1667;
   font-weight: 300;
   text-transform: uppercase;
@@ -63,6 +63,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   padding: 1rem;
 }
 
@@ -92,6 +94,9 @@ nav a {
   gap: 10px;
   align-items: flex-end;
 }
+.header-logo h1{
+  text-align: center;
+}
 
 .hero-img {
   /* width: 300px;
@@ -101,9 +106,16 @@ nav a {
 
 .hero-content {
   background-color: var(--white);
+  padding: 2rem;
+}
+
+.hero-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main {
-  margin: 3rem;
+  margin: 0;
 }
 
 .hero-section {
@@ -111,6 +123,9 @@ main {
   flex-wrap: wrap;
 }
 
+.latte-hero-section{
+  padding: 3rem;
+}
 .button-hero {
   background-color: var(--green);
   text-transform: uppercase;
@@ -119,14 +134,18 @@ main {
   padding: 8px;
 }
 
+.latte-hero{
+display: inline;
+}
+
 a {
   text-decoration: none;
 }
 
 .cards-section {
   background-color: var(--light-blue);
-  border-bottom: 5px solid var(--yellow);
-  padding: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
 }
 .cards-wrapper {
   display: flex;
@@ -157,21 +176,27 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   padding: 20px;
+  border-top: 5px solid var(--yellow);
 }
 
 footer img {
-  width: 250px;     /* adjust to taste */
+  width: 250px; /* adjust to taste */
   max-width: 100%;
   height: auto;
 }
 
 footer p {
- font-size:  smaller;
+  font-size: smaller;
   text-align: center;
   margin: 10px 0 0;
+  display: flex;
+
+
 }
+
+
 
 @media (min-width: 650px) {
   nav ul {
@@ -179,8 +204,12 @@ footer p {
     width: auto;
   }
 
-  header{
+  header {
     flex-direction: column wrap;
+  }
+  
+  .header-logo {
+    gap: 2rem;
   }
 
   .hero-section {
@@ -188,6 +217,10 @@ footer p {
     padding: 0;
     margin: 0;
   }
+
+  .latte-hero-section{
+  padding: 3rem;
+}
 
   .hero-img {
     width: 50%;
@@ -198,7 +231,7 @@ footer p {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   h2 {
     margin-top: 0;
@@ -215,6 +248,7 @@ footer p {
     width: 40%;
     margin: 1rem;
   }
+
 }
 
 @media (min-width: 1000px) {
@@ -238,12 +272,18 @@ footer p {
     max-width: none;
     margin: 0;
   }
-
+.latte-hero-section{
+  padding: 0;
+}
   .card {
     width: 22%;
   }
 
   h1 {
     margin-top: 1rem;
+  }
+
+  nav ul {
+    margin: 0;
   }
 }
